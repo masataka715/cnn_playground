@@ -5,7 +5,7 @@ import numpy as np
 from sklearn import model_selection
 
 # パラメーターの初期化
-classes = ["car", "motorbike"]
+classes = ["food", "shop", "menu", "signboard"]
 num_classes = len(classes)
 image_size = 224 #VGG16モデルの入力サイズに合わせる
 

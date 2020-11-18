@@ -1,8 +1,7 @@
-# car
-# food
-# motorbike
 *.npy
 *.jpg
 *.png
 *.jpng
 env.py
+__pycache__
+*.h5

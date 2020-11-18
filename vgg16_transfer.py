@@ -8,7 +8,7 @@ from tensorflow.python.keras.utils import np_utils
 from tensorflow.python.keras.applications.vgg16 import VGG16
 
 # パラメーターの初期化
-classes = ["car", "motorbike"]
+classes = ["food", "shop", "menu", "signboard"]
 num_classes = len(classes)
 image_size = 224
 
