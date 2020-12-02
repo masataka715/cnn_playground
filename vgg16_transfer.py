@@ -8,7 +8,7 @@ from tensorflow.python.keras.utils import np_utils
 from tensorflow.python.keras.applications.vgg16 import VGG16
 
 # パラメーターの初期化
-classes = ["food", "shop", "menu", "signboard"]
+classes = ["s_food", "s_menu", "s_appearance", "sum_introspection"]
 num_classes = len(classes)
 image_size = 224
 
@@ -36,7 +36,7 @@ for layer in model.layers[:15]:
 
 opt = Adam(lr=0.0001)
 model.compile(loss='categorical_crossentropy', optimizer=opt,metrics=['accuracy'])
-model.fit(X_train, y_train, batch_size=32, epochs=17)
+model.fit(X_train, y_train, batch_size=32, epochs=8)
 
 score = model.evaluate(X_test, y_test, batch_size=32)
 

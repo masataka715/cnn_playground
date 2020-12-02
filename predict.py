@@ -5,7 +5,7 @@ from PIL import Image
 import sys
 
 # パラメーターの初期化
-classes = ["food", "shop", "menu", "signboard"]
+classes = ["s_food", "s_menu", "s_appearance", "sum_introspection"]
 num_classes = len(classes)
 image_size = 224
 
